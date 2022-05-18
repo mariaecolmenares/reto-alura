@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main> 
+        <div class="logo"></div>    
+        <section class="left-section">
+           
+            <div class="input-container">
+                <input type="text" placeholder="Ingrese el texto aquí"" class="input">
+            </div>
+                <p class="text">  <img src="./assets/icon.png" alt="" class="icon">  letras minúsculas y sin acentos
+                </p>
+                <div class="button-container"> 
+                <button type="button" onclick="botonEncriptar()" class="primary-button" >Encriptar </button>
+                <button type="button" onclick="botonDesencriptar()"  class="secondary-button" > Desencriptar</button>
+            </div>
+        </section>
+        <section class="right-section">
+            <img src="./assets/Muñeco.png" alt="" class="image">
+            <p class="text-info" id="text-info">Ningún mensaje fue encontrado</p>
+            <p class="text-info-secondary">Ingresa el texto que desees encriptar o desencriptar.</p>
+         </section>
+    </main>
+    <script src="./script.js"> </script>  
+</body>
+</html>
